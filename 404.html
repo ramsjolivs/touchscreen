@@ -11,10 +11,11 @@
         if (path.startsWith(basePath)) {
             const route = path.slice(basePath.length);
             sessionStorage.redirect = route;
+            window.location.replace(basePath + "/");
         } else {
             sessionStorage.redirect = path;
+            window.location.replace("/");
         }
-        window.location.replace(window.location.pathname.split("/").slice(0, -1).join("/"));
     </script>
 </head>
 
