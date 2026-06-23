@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+        const path = window.location.pathname;
+        const basePath = "/touchscreen";
+        if (path.startsWith(basePath)) {
+            const route = path.slice(basePath.length);
+            sessionStorage.redirect = route;
+        } else {
+            sessionStorage.redirect = path;
+        }
+        window.location.replace(window.location.pathname.split("/").slice(0, -1).join("/"));
+    </script>
+</head>
+
+<body></body>
+
+</html>
