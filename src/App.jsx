@@ -7,7 +7,7 @@ import Page3 from "./pages/Page3";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/touchscreen">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
