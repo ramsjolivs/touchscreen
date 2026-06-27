@@ -1,9 +1,15 @@
 function Page2() {
   return (
     <div className="container">
-      <h1>Page 2</h1>
-      <p>This is the second subpage. You can add your content here.</p>
-      <p>Use the navigation bar to switch between pages.</p>
+      <iframe
+        src="https://docs.google.com/presentation/d/e/2PACX-1vRaJ-0E07iJBopoFD1Pvkd8B_uikCzU7tHTHpaAnpNvMZqdpgGA6r6wVy7Fg6DqZkgmNblqgH9sP09H/pubembed?start=false&loop=false&delayms=3000"
+        frameBorder="0"
+        width="1080"
+        height="1949"
+        allowFullScreen={true}
+        mozAllowFullScreen={true}
+        webkitAllowFullScreen={true}
+      ></iframe>
     </div>
   );
 }

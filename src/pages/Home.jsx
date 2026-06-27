@@ -1,12 +1,11 @@
+import logoImg from "/imgs/RamsjoLivs_Logo.png";
+
 function Home() {
   return (
     <div className="container">
-      <h1>Welcome to Home</h1>
-      <p>
-        This is the main page with a navigation bar at the top. Use the
-        navigation to explore the subpages.
-      </p>
-      <p>This is now a React Vite application with client-side routing!</p>
+      <h1>Welcome to the Ramsjö Livs</h1>
+
+      <img id="logo-main" src={logoImg} alt="Ramsjö Livs" />
     </div>
   );
 }
